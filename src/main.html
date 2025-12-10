@@ -9,8 +9,8 @@
 <body>
     <div class="todo" data-js-todo>
         <h1 class="todo__title">To Do list</h1>
-        <form action="" class="todo__form" data-js-todo-new-task-from>
-            <div class="todo__field field" >
+        <form action="" class="todo-form" data-js-todo-new-task-from>
+            <div class="todo-field field" >
                 <label  class="field-label" for="new-task">
                     New task title 
                 </label>
@@ -18,7 +18,7 @@
             </div>
             <button class="button" type="submit">Add</button>
         </form>
-        <form action="" class="todo__form" data-js-todo-searh-task-form>
+        <form action="" class="todo-form" data-js-todo-searh-task-form>
             <div class="todo-field field" >
                 <label  class="search-label" for="new-task">
                     Search task
@@ -67,7 +67,9 @@
                 </button>
             </li>
         </ul>
-        <div class="todo__empty-message" data-js-todo-empty-message></div>
+        <div class="todo__empty-message" data-js-todo-empty-message>
+            There are no tasks yet
+        </div>
     </div>
      <script src="script.js"  type="module"></script>
 </body>
