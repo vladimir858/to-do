@@ -11,7 +11,7 @@
         <h1 class="todo__title">To Do list</h1>
         <form action="" class="todo-form" data-js-todo-new-task-from>
             <div class="todo-field field" >
-                <label  class="field-label" for="new-task">
+                <label  class="field__label" for="new-task">
                     New task title 
                 </label>
                 <input class="field__input" id="new-task" placeholder=" " autocomplete="off" data-js-todo-new-task-input />
@@ -20,10 +20,10 @@
         </form>
         <form action="" class="todo-form" data-js-todo-searh-task-form>
             <div class="todo-field field" >
-                <label  class="search-label" for="new-task">
+                <label class="search-label" for="new-task">
                     Search task
                 </label>
-                <input class="field-input" id="search-task" placeholder=" " 
+                <input class="field__input" id="search-task" placeholder=" " 
                 autocomplete="off" type="search"
                  data-js-todo-searh-task-input
                 />
@@ -68,7 +68,7 @@
             </li>
         </ul>
         <div class="todo__empty-message" data-js-todo-empty-message>
-            There are no tasks yet
+         
         </div>
     </div>
      <script src="script.js"  type="module"></script>

@@ -41,9 +41,8 @@ font-weight:  600;
     }
     &:not(.is-visible){
         opacity: 0;
-
-    }visibility: hidden;
-
+        visibility: hidden;
+    }
 }
 .todo__list,
 .todo__empty-message{
@@ -64,35 +63,25 @@ font-weight:  600;
 
 
 
-/* .todo__field {
-}
-.field {
-}
-.field-label {
-}
-.field__input {
-}
+/* 
+
+
+
 
 
 .search-label {
 }
 .field-input {
 }
-.todo__info {
-}
+
 .todo-total-tasks {
 }
 .todo-delete-all-btn {
 }
-.todo__list {
-}
-.todo__item {
-}
+
 .todo-item {
 }
 .todo-item__checkbox {
 }
-.todo-item__label {
-}
-.todo-item__delete-button {
-} */
+
+ */
