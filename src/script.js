@@ -14,10 +14,12 @@ selectors = {
     itemDeleteButton: '[data-js-todo-item-delete-button]',
     emptyMessage: '[data-js-todo-empty-message]',
 };
+
  stateClasses = {
     isVisible: 'is-visible',
     isDisappearing: 'is-disappering',
  }
+ 
   localStorageKey = 'todo-items'
 } 
 
