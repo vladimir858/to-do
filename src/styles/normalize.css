@@ -20,7 +20,7 @@
   у которых есть атрибут class
  */
 body,
-:where(blockquote, figure, fieldset):where([class]) {
+:where(blockquote, figure):where([class]) {
   margin: 0;
 }
 
@@ -48,6 +48,7 @@ body,
 }
 
 :where(fieldset[class]) {
+  margin-left: 0;
   padding: 0;
   border: none;
 }
@@ -79,7 +80,7 @@ p {
   Внешний отступ вниз для параграфа без атрибута class,
   который расположен не последним среди своих соседних элементов
  */
-p:where(:not([class]):not(:last-child)) {
+:where(p:not([class]):not(:last-child)) {
   margin-bottom: var(--paragraphMarginBottom);
 }
 
@@ -115,9 +116,13 @@ html {
     при появлении / исчезновении скроллбара
    */
   scrollbar-gutter: stable;
-  /**
-    Плавный скролл
-   */
+}
+
+/**
+  Плавный скролл
+ */
+html,
+:has(:target) {
   scroll-behavior: smooth;
 }
 
@@ -146,13 +151,6 @@ a:where([class]) {
 button,
 label {
   cursor: pointer;
-}
-
-/**
-  Убирает серую подсветку при тапе на мобильных устройствах (iOS/Android)
- */
-button {
-  -webkit-tap-highlight-color: transparent;
 }
 
 /**
